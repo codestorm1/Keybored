@@ -36,8 +36,8 @@ config :vintage_net,
          networks: [
            %{
              key_mgmt: :wpa_psk,
-             ssid: "Kontoret",
-             psk: "underjord"
+             ssid: System.get_env("SSID"),
+             psk: System.get_env("PSK")
            }
          ]
        },
