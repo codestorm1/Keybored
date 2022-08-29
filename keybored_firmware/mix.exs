@@ -9,7 +9,7 @@ defmodule KeyboredFirmware.MixProject do
     [
       app: @app,
       version: @version,
-      elixir: "~> 1.11",
+      elixir: "~> 1.13",
       archives: [nerves_bootstrap: "~> 1.11"],
       start_permanent: Mix.env() == :prod,
       build_embedded: true,
